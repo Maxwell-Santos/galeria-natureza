@@ -16,7 +16,7 @@
     @apply my-10 sm:my-20 max-w-[1500px] mx-auto px-[var(--section-px)] max-[1100px]:px-[var(--section-px-md)] max-[600px]:px-[var(--section-px-sm)]
   }
   footer {
-    @apply w-full max-w-[1500px] bg-[#00111b] p-5 py-10 text-center flex flex-col
+    @apply w-full max-w-[1500px] bg-[#00111b] p-3 text-center flex flex-col
   }
   h1 {
     @apply text-[#fdfdfe]
@@ -53,6 +53,6 @@
   }
 
   .social-media li{
-    @apply w-7
+    @apply w-6 sm:w-7
   }
 }

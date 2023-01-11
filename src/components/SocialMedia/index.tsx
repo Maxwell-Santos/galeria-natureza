@@ -4,7 +4,7 @@ export function SocialMedia() {
 
   return (
     <div className="social-media bg-[#ff7a01] rounded-sm">
-      <ul className="p-3 flex flex-col gap-5">
+      <ul className="p-3 flex sm:flex-col gap-5 max-[450px]:px-4 max-[450px]:p-2">
         <li>
           <a href="https://github.com/Maxwell-Santos"
             target="_blank"

@@ -13,7 +13,7 @@ export default function Home() {
     <>
       <Head>
         <title>Galeria Natureza</title>
-        <meta name="description" content="A fake landing page of a photographer" />
+        <meta name="description" content="Uma landing page de um fotógrafo fictício" />
         <meta name="author" content="Maxwell Alves dos Santos" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" type="image/x-icon" href="/logoMaxIconClaro.png"></link>
@@ -23,7 +23,7 @@ export default function Home() {
         <Header />
         <Main />
 
-        <div className="absolute -bottom-36 right-20">
+        <div className="absolute sm:-bottom-30 -bottom-7 right-7 sm:right-20">
           <SocialMedia />
         </div>
       </div>
