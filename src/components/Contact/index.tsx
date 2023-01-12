@@ -69,11 +69,19 @@ export function Contact() {
               name="email"
               onClick={() => setFEmail(true)}
               onBlur={(e) => checkEmail(e.target.value)}
+              required
             />
 
           </div>
 
-          <textarea name="campo_de_texto" id="textarea" cols={30} rows={6} placeholder="Me conte mais..."></textarea>
+          <textarea
+            name="campo_de_texto"
+            id="textarea"
+            cols={30}
+            rows={6}
+            placeholder="Me conte mais..."
+            required
+          ></textarea>
 
           <button
             className="p-3 px-10 bg-[#00111b] hover:bg-[#ff7a01] transition-all w-full sm:w-fit ml-auto text-white rounded-sm"

@@ -30,12 +30,11 @@ export function Header() {
           {
             width > 690 ? (
 
-              <ul className="flex gap-8 md:gap-16">
+              <ul className="flex gap-8 md:gap-10">
                 <li className="cursor-pointer">
                   <Link
                     to="about"
                     spy
-                    smooth
                     offset={-20}
                     className="hover:text-[#ff7a01] transition-all"
                   >
@@ -46,7 +45,6 @@ export function Header() {
                   <Link
                     to="gallery"
                     spy
-                    smooth
                     offset={-20}
                     className="hover:text-[#ff7a01] transition-all"
                   >
@@ -57,7 +55,6 @@ export function Header() {
                   <Link
                     to="contact"
                     spy
-                    smooth
                     offset={-20}
                     className="hover:text-[#ff7a01] transition-all"
                   >
@@ -84,7 +81,6 @@ export function Header() {
                         <Link
                           to="about"
                           spy
-                          smooth
                           offset={-20}
                           className="hover:text-[#ff7a01] transition-all"
                           onSetActive={() => setOpen(false)}
@@ -96,7 +92,6 @@ export function Header() {
                         <Link
                           to="galley"
                           spy
-                          smooth
                           offset={-20}
                           className="hover:text-[#ff7a01] transition-all"
                           onSetActive={() => setOpen(false)}
@@ -108,7 +103,6 @@ export function Header() {
                         <Link
                           to="contact"
                           spy
-                          smooth
                           offset={-20}
                           className="hover:text-[#ff7a01] transition-all"
                           onSetActive={() => setOpen(false)}

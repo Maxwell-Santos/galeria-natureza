@@ -10,6 +10,10 @@ module.exports = {
     extend: {
       fontFamily: {
         'primary': ['var(--inter)', fontFamily.sans]
+      },
+      animation : {
+        'bounce-120' : 'bounce 1s infinite 120ms',
+        'bounce-200' : 'bounce 1s infinite 200ms',
       }
     },
   },

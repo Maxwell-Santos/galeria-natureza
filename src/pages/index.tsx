@@ -6,9 +6,20 @@ import { About } from '../components/About'
 import { Gallery } from '../components/Gallery'
 import { Contact } from '../components/Contact'
 import { SocialMedia } from '../components/SocialMedia'
+import { TopButton } from '../components/TopButton'
+// import { Loader } from '../components/Loader'
+import { useEffect, useState } from 'react'
+import { AnimatePresence, motion } from 'framer-motion'
+import { Loader } from '../components/Loader'
 
 
 export default function Home() {
+  const [load, setLoad] = useState(true)
+
+  useEffect(() => {
+    setLoad(false)
+  })
+
   return (
     <>
       <Head>
@@ -19,19 +30,28 @@ export default function Home() {
         <link rel="icon" type="image/x-icon" href="/logoMaxIconClaro.png"></link>
       </Head>
 
-      <div className="bg-[#00111b] sm:h-[800px] relative">
-        <Header />
-        <Main />
+      {
+        load ? (
+          <Loader />
+        ) : (
+          <>
+            <div className="bg-[#00111b] sm:h-[800px] relative">
+              <Header />
+              <Main />
 
-        <div className="absolute sm:-bottom-30 -bottom-7 right-7 sm:right-20">
-          <SocialMedia />
-        </div>
-      </div>
-      <About />
-      <Gallery />
-      <Contact />
+              <div className="absolute sm:-bottom-30 -bottom-7 right-7 sm:right-20">
+                <SocialMedia />
+              </div>
+            </div>
+            <About />
+            <Gallery />
+            <Contact />
+            <Footer />
+            <TopButton />
+          </>
 
-      <Footer />
+        )
+      }
     </>
   )
 }

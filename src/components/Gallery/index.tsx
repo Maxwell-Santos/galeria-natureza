@@ -45,9 +45,9 @@ export function Gallery() {
         <div className='gallery-card col-span-4 sm:col-span-2 row-span-2 relative'>
           <Image
             className='img-grid'
-            src="/alce.jpg"
-            alt="alce"
-            blurDataURL={"/alce.jpg"}
+            src="/flamingo.jpg"
+            alt="flamingo"
+            blurDataURL={"/flamingo.jpg"}
             placeholder="blur"
             fill
           />
@@ -95,9 +95,9 @@ export function Gallery() {
         <div className='gallery-card col-span-2 sm:col-span-1 row-span-1 relative'>
           <Image
             className='img-grid'
-            src="/rio.jpg"
-            alt="rio"
-            blurDataURL={"/rio.jpg"}
+            src="/alce.jpg"
+            alt="alce"
+            blurDataURL={"/alce.jpg"}
             placeholder="blur"
             fill
           />

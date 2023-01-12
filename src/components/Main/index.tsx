@@ -1,11 +1,14 @@
+import { motion } from "framer-motion"
 import Image from "next/image"
 
 export function Main() {
 
   return (
     <main className="flex items-center flex-col sm:flex-row justify-center mx-auto">
-      <div
-        className="relative hidden sm:block flex-1 w-full h-[500px] mt-16 md:m-0 md:h-[600px]"
+      <motion.div
+      initial={{opacity: 0}}
+      animate={{opacity: 1}}
+      className="relative hidden sm:block flex-1 w-full h-[500px] mt-16 md:m-0 md:h-[600px]"
       >
         <Image
           src={"/lobo1.jpg"}
@@ -13,11 +16,16 @@ export function Main() {
           blurDataURL={"/lobo1.jpg"}
           placeholder="blur"
           fill
+          className="bg-white/20"
         />
-      </div>
+      </motion.div>
 
-      <div className="py-10 flex-1 sm:-ml-24 z-20 flex flex-col items-end gap-1 sm:gap-16">
-        <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold">
+      <motion.div
+      initial={{opacity: 0}}
+      animate={{x:-100, opacity: 1}}
+      className="py-10 flex-1 sm:-ml-24 z-20 flex flex-col items-end gap-1 sm:gap-16"
+      >
+        <h1 className="text-4xl sm:text-5xl md:text-7xl font-extrabold">
           Fotografia ajuda as pessoas a verem
         </h1>
 
@@ -27,7 +35,7 @@ export function Main() {
         >
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit ex obcaecati hic inventore quia eos qui, fugiat in eligendi tempore, perspiciatis nihil est porro mollitia vitae debitis excepturi praesentium quisquam!
         </p>
-      </div>
+      </motion.div>
     </main>
   )
 }
