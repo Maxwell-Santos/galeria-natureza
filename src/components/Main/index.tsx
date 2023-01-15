@@ -21,8 +21,8 @@ export function Main() {
       </motion.div>
 
       <motion.div
-      initial={{opacity: 0}}
-      animate={{x:-100, opacity: 1}}
+      initial={{opacity: 0, x: 100}}
+      animate={{x: 0, opacity: 1, transition: {duration: 0.5}}}
       className="py-10 flex-1 sm:-ml-24 z-20 flex flex-col items-end gap-1 sm:gap-16"
       >
         <h1 className="text-4xl sm:text-5xl md:text-7xl font-extrabold">
