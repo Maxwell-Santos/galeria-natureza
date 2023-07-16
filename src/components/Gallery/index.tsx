@@ -13,8 +13,7 @@ export function Gallery() {
         <p className="leading-7 mb-10">
           <em className='max-w-lg'>
             <q>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam excepturi aut sint placeat deleniti optio facilis pariatur accusantium incidunt natus.
-              Lorem ipsum dolor sit amet consectetur
+            Com cada clique, enquadro a magia da natureza para inspirar o mundo a proteger e preservar a beleza que nos cerca
             </q>
           </em>
         </p>

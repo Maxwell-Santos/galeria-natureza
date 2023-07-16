@@ -33,7 +33,7 @@ export function Main() {
         className="sm:max-w-sm mt-10"
         style={{textShadow: '2px 2px 5px rgba(0,0,0,0.8)'}}
         >
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit ex obcaecati hic inventore quia eos qui, fugiat in eligendi tempore, perspiciatis nihil est porro mollitia vitae debitis excepturi praesentium quisquam!
+          Descubra a beleza da vida selvagem e paisagens deslumbrantes neste portfólio de fotografia de natureza, capturado com paixão e sensibilidade.
         </p>
       </motion.div>
     </main>
